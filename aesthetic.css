@@ -1,0 +1,29 @@
+* {
+  font-family: "Times New Roman", Times, serif; /* Assigning font  */
+}
+body {
+  background-color: #eee9e9; /*selecting body colour*/
+}
+.title {
+  /*creating main title design*/
+  color: #00688b;
+  background-color: #9db68c;
+  text-align: center;
+  font-size: xx-large;
+}
+h2 {
+  color: #00688b; /*adding aesthetic features for secondary titles*/
+}
+.canada {
+  /*dictating image position*/
+  float: left;
+}
+.forensics {
+  /*dictating first gif position*/
+  float: right;
+}
+.kermit {
+  /*dictatinf second gif position*/
+  float: left;
+  margin-right: 30px;
+}
