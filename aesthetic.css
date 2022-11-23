@@ -27,3 +27,63 @@ h2 {
   float: left;
   margin-right: 30px;
 }
+.container {
+  /* assigning dimentions to grid */
+  display: grid;
+  grid-template-rows: 100px 350px 100px;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.header {
+  /* defining specific grid section and animation */
+  grid-area: header;
+  text-align: center;
+  animation-name: ombre;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.body {
+  grid-area: content;
+  background-color: #eed2ee;
+  text-align: center;
+}
+.footer {
+  /* defining specific grid section and animation */
+  grid-area: footer;
+  animation-name: ombre;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.animated2 {
+  /* defining animation of image moving */
+  animation-name: textmove;
+  animation-duration: 5s;
+}
+/* keyframe for animation */
+@keyframes ombre {
+  0% {
+    background-color: #87cefa;
+  }
+  100% {
+    background-color: #f7b3da;
+  }
+}
+@keyframes textmove {
+  0% {
+    margin-left: 75%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
